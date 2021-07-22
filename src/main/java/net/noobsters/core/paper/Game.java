@@ -1,7 +1,5 @@
 package net.noobsters.core.paper;
 
-import java.util.HashMap;
-
 import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -9,8 +7,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(callSuper=false)
-public class Game extends BukkitRunnable{
+@EqualsAndHashCode(callSuper = false)
+public class Game extends BukkitRunnable {
     Core instance;
 
     long gameTime = 0;
@@ -19,7 +17,6 @@ public class Game extends BukkitRunnable{
     int timelimit = 5;
     boolean switchTimeLimit = true;
 
-    HashMap<String, PlayerMask> playerMasks = new HashMap<>();
 
     public Game(Core instance) {
         this.instance = instance;
